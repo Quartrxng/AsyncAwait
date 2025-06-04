@@ -25,18 +25,13 @@ namespace Site
         {
             InitializeComponent();
             Worker();
-            Broken();
-
-        }
-
-        public static async void Broken()
-        {
             string data = Parser().Result;
+
         }
 
         public static async void Worker()
         {
-            string data1 = await Parser();
+            string data = await Parser();
         }
         static async Task<string> Parser()
         {
